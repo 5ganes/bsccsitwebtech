@@ -1,0 +1,41 @@
+if(post form submit vako chha vane){
+	$_POST = [
+		'fullName' => 'Ganesh Khatri',
+		'address' => 'Kathmandu',
+		'email' => 'kh6ganesh@gmail.com',
+		'gender' => 1,
+		'country' => 'Nepal',
+		'hobbies' => [
+						'ftbl',
+						'tt'
+					 ],
+		'description' => 'this is text desc about me',
+		'submit' => 'Submit'
+	];
+	$_POST['country']
+	insert into person(field list) values($_POST['fullName'], ......)
+	hobbies = $_POST['hobbies'];
+	hobbies[0]
+}
+<h2>Enter Your Detail</h2>
+<form method="POST" action="">
+	Full Name : <input type="text" name="fullName"><br><br>
+	Address : <input type="text" name="address"><br><br>
+	Email : <input type="email" name="email"><br><br>
+	Gender : 
+	<input type="radio" name="gender" value="1" checked> Male 
+	<input type="radio" name="gender" value="0"> Female <br><br>
+	Country : 
+	<select name="country">
+		<option value="Nepal">Nepal</option>
+		<option value="India" selected>India</option>
+		<option value="China">China</option>
+	</select><br><br>
+	Hobbies : 
+	<input type="checkbox" name="hobbies[]" value="ftbl" checked> Football 
+	<input type="checkbox" name="hobbies[]" value="crct"> Cricket 
+	<input type="checkbox" name="hobbies[]" value="tt"> Table Tennis<br><br>
+	Description :<br>
+	<textarea name="description" rows="3" cols="50"></textarea><br><br>
+	<input type="submit" name="submit" value="Submit">
+</form>

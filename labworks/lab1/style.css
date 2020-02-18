@@ -1,0 +1,43 @@
+body{
+	margin: 0;
+}
+header, footer{
+	background-color: green;
+	text-align: center;
+	padding: 3%;
+}
+section{
+	background-color: red;
+	padding: 2%;
+}
+
+.news-block li{
+	list-style: square; padding: 1% 2%;
+}
+.news-block li a{
+	text-decoration: none; color: white
+}
+
+.std-info-table, .std-info-table th, .std-info-table td{
+	border: 2px solid green; 
+	border-collapse: collapse;
+	padding: 5px;
+	/*border-spacing: 5px;*/
+}
+/*.std-info-table tr:nth-child(even){
+	background-color: yellow;
+}*/
+
+.image-block{
+	width: 200px; height: 200px;
+	border-radius:50%;
+}
+
+
+
+
+
+
+
+
+

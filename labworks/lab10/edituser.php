@@ -1,5 +1,5 @@
 <?php
-	$pdo = new PDO('mysql:dbname=everestcsit;host=localhost', 'root', '');
+	require 'db.php';
 	$id = $_GET['id'];
 	$stmt = $pdo->query("SELECT * FROM tbl_user WHERE id = '$id'");
 	$user = $stmt->fetch();

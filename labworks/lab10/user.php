@@ -1,5 +1,5 @@
 <?php
-	$pdo = new PDO('mysql:dbname=everestcsit;host=localhost', 'root', '');
+	require 'db.php';
 	if(isset($_POST['add'])){
 		extract($_POST); // makes variables of array indexs
 		$pdo->query("INSERT INTO tbl_user(id,name,address,email,birthdate) 
